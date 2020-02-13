@@ -117,7 +117,7 @@ alert(soma(5,10));
 var idade = prompt ("qual sua idade")
 console.log(validaIdade(idade))
 */
-
+/*
 //declaracao de variaveis
 var citacao = [];
     citacao[0]="Sou dramática, intensa, transitória e tenho uma alegria em mim que quase me deixa exausta. Eu sei sorrir com os olhos e gargalhar com o corpo todo. Eu sei chorar toda encolhida abraçando as pernas. Por isso, não me venha com meios-termos, com mais ou menos ou qualquer coisa. Venha a mim com corpo, alma, vísceras, e falta de ar..";
@@ -144,9 +144,9 @@ contador = 0
 //funcoes intrinsecas -> elas vem o javascript
 setTimeout("exibeTexto()",10000);
 }//fim da funcao exibeTexto()
+/*
 
-
-
+/*
 //declaracao de variaveis
 var banners = ["Imagens/alice.jpg","Imagens/jr_eu.jpg","Imagens/Le_e_eu.jpg"];
 var alternativo = ["Amorzinho","amor","principe"];
@@ -192,7 +192,7 @@ if(hora<=12){
 }else{
     document.write("Fim do mundo")  
 }
-
+/*
 /*
 Obtém a data/hora atual
 var data = new Date();
@@ -241,3 +241,21 @@ var tz      = data.getTimezoneOffset(); // em minutos
         var cidade = super[0][1];
         alert(cidade);
         */
+// JavaScript Document
+function clique(){
+	//alert("Ok");
+	document.getElementById("fundo").style.backgroundColor="#000";
+	//
+	}
+function troca(cor){
+	if (cor == "vermelho"){
+		document.getElementById("fundo").style.backgroundColor="red";
+		document.getElementById("quadrado").style.backgroundColor="#f0f";
+		}else if(cor == "verde"){
+			document.getElementById("fundo").style.backgroundColor="green";
+			}else{
+				document.getElementById("fundo").style.backgroundColor="blue";
+				};
+	
+	};
+
