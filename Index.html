@@ -4,162 +4,22 @@
     <meta charset="utf-8">
     <title> Testes JavaScript </title> 
     <script type="text/javascript" src="main.js"></script>
-    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!--
-    <script type = "text/javascript">  var nome = prompt("qual seu nome")
-        document.write(" Welcome "+ nome +"!") </script>
--->
-
-<script>
-    //declaracao de variaveis
-    var citacao = [];
-    citacao[0]="Sou dramática, intensa, transitória e tenho uma alegria em mim que quase me deixa exausta. Eu sei sorrir com os olhos e gargalhar com o corpo todo. Eu sei chorar toda encolhida abraçando as pernas. Por isso, não me venha com meios-termos, com mais ou menos ou qualquer coisa. Venha a mim com corpo, alma, vísceras, e falta de ar..";
-    citacao[1]="Só sei que nada sei";
-    citacao[2]="Faça ou não faça, tentativa não existe";
-    citacao[3]="Eu acredito no amor. Eu creio que pode existir alguma chance e eu sempre acho que pode ser diferente. Talvez essa seja a explicação de todas decepções";
-    citacao[4]="De alguma forma eu sabia que seria amor. Eu não sei, mas acho que a gente olha e pensa: “Quero pra mim”. Mas dá um frio na barriga, um tremor, um medo de depender de alguém, de sofrer, de escolher errado, de lutar por algo que não vale a pena. Porque o coração nem sempre é mocinho, as vezes ele também gosta de pregar peças, sei lá, talvez queira provar que também sabe ser vilão. Foi por isso que corri, tentei fugir, mas quando tem que ser, não adianta, será";
-    //alert(citacao[2]);
-    
-    var contador = 0;
-    
-    
-    //funcoes
-    function exibeTexto(){
-    //camel case
-    document.getElementById("texto").innerHTML =  citacao[contador];
-    //auto incrementar o contador
-    contador++
-    //limitador
-    if(contador == citacao.length){
-    contador = 0
-    }
-    //temporizacao
-    //funcoes intrinsecas -> elas vem o javascript
-    setTimeout("exibeTexto()",10000);
-    }//fim da funcao exibeTexto()
-    
-    
-
-    
-//declaracao de variaveis
-var banners = ["Imagens/alice.jpg","Imagens/jr_eu.jpg","Imagens/Le_e_eu.jpg"];
-var alternativo = ["Amorzinho","amor","principe"];
-var titulo = ["Princesinha","Princesa","Amorzão"];
-
-//
-var contador = 0;
-
-
-//functions
-function rotativo(){
-//nesta linha endereco da imagem
-document.images[0].src = banners[contador];
-//o alt da imagem
-document.images[0].alt = alternativo[contador];
-//title das imagens
-document.images[0].title = titulo[contador];
-//
-contador++
-//document.write(contador);
-//
-if(contador == banners.length){
-contador = 0
-}
-//contador de tempo -> timer
-setTimeout("rotativo()",2000)
-}
-</script>
-
 </head>
-
-    <body onload="exibeTexto();rotativo()">
-        <img/>
-       <h3> Citações </h3>
-
-            <div id="texto"></div>
-
-   
-   
-   
-   
-   
+<body onload="exibeTexto();rotativo()">
+    <img/>
+    <h3> Citações </h3>
+    <div id="texto"></div>
     <header>
         <p>Ana Paula Araujo Cavalcante</p>
-        
-
-        
-<i class="glyphicon glyphicon-cloud"></i>
-<i class="glyphicon glyphicon-remove"></i>
-<i class="glyphicon glyphicon-user"></i>
-<i class="glyphicon glyphicon-envelope"></i>
-<i class="glyphicon glyphicon-thumbs-up"></i>
-
- <!--
-     <script>
-
-/*
-estrutura do for
-for(i=0;i<10;i++){
-	
-i=0 -> inicio da variavel
-i<10 -> condicao ou periodo em que var i existe
-i++ -> incremento, adicao, de quanto em quanto sera adicionado
-
-	document.write("oque vai acontecer");
-	}
-*/
-
-//loop
-//while = (enquanto) estrutura de laço 
-//vetor = arrays
-
-var vetor = [1,2,3,4,5,6];
-var i = 0;
-
-while(i<vetor.length){
-	document.write(vetor[i]);
-	i++
-	}
-
-function teste(){
-	i++
-	//document.write(i);
-	document.write("<button onclick='teste()'>"+i+"</button>");
-	}//fecha teste
-
-//teste();
-</script>
-
--->
+               
+        <i class="glyphicon glyphicon-cloud"></i>
+        <i class="glyphicon glyphicon-remove"></i>
+        <i class="glyphicon glyphicon-user"></i>
+        <i class="glyphicon glyphicon-envelope"></i>
+        <i class="glyphicon glyphicon-thumbs-up"></i>
 
 
-
-        <!--
-            <script> document.write ("Olá")</script>
-            <button onclick="bomDia()">Clique</button>
-            <button onclick="Student()">Estudar</button>
-        -->
-
-<!--
-     <script type="text/javascript">
-            var nome = "Ana" ;
-            var sobrenome ="Araujo";
-        //conceito condicional 
-
-    if(nome == "Ana"){ //se a variavel nome tiver o valor Gabriel
-        alert("Bem Vindo " + nome); //exiba uma janela de alerta com o texto Bem Vindo Gabriel
-    }else if(nome == "Andexon" & sobrenome !="Araujo"){//e se a variavel tiver o valor Pedro
-        alert("Bem Vindo Presidente da Empresa"); //exibir uma janela de alerta com o texto bem vindo presidente
-    }else if(nome == "OAndexon" &  sobrenome == "Cavalcante"){//e se a variavel tiver o valor Pedro
-        alert("Bem Vindo " + nome + " "  + sobrenome); //exibir uma janela de alerta com o texto bem vindo presidente
-    }else{ //caso contrario
-        alert("Usuario nao cadastrado");//exiba usuario nao cadastrado
-        }  
-    </script>
-
--->
-    <br>
         <!--  
              onload="carregando()">   
         
@@ -176,32 +36,7 @@ function teste(){
         -->
             
   <!--     
-<script type="text/javascript">
-        //matriz ou array
-        //são variáveis que armazenam vários valores
-        var nome = [];
-        nome[0] = "Primeiro"; 
-        nome[1] = "Segundo";
-        nome[2] = "Terceiro";
-        //
-        alert(nome[1]);
-        
-        //definicao de um array quando declarado
-        var mercado = ["Arroz","Banana","Maça","Jabuticaba","Abacate","Feijao"];
-        var totalDeItens = mercado.length;
-        //
-        //alert(mercado[3]);
-        alert(mercado.length);
-        /*array bidimensional
-        var sub_um = ["São Paulo","Osasco","Guarulhos"];
-        var sub_dois=["Rio de Janeiro","Cabo Frio","Petrópolis"];
-        
-        var super = [sub_um,sub_dois];
-        
-        var cidade = super[0][1];
-        alert(cidade);
-        */
-</script>
+
 -->
 
         </header>
